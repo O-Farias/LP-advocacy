@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/public/favicon.ico" type="image/x-icon" />
+    <title>LGPD - Lei Geral de Proteção de Dados Pessoais</title>
+    <!-- CSS do Bootstrap -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fonte Google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Customizado -->
+    <style>
+      body {
+        background: linear-gradient(135deg, #062453, #000000);
+        background-size: 400% 400%;
+        animation: gradientAnimation 10s ease infinite;
+        color: #ffffff;
+        font-family: "Lora", serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+      @keyframes gradientAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .content {
+        background: rgba(31, 31, 31, 0.9);
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        max-width: 800px;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 1.5s ease forwards;
+      }
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      h1 {
+        margin-bottom: 30px;
+        color: #ffffff;
+        font-size: 2em;
+      }
+      p {
+        font-size: 1.4em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h1>LGPD - Lei Geral de Proteção de Dados Pessoais</h1>
+        <p>
+          Temos o compromisso com seus direitos individuais e digitais. Este
+          canal visa proteger acima de tudo, o sigilo de seus dados pessoais e
+          possui toda a segurança conforme os meios legais de acordo com a lei
+          Nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais). Que
+          respeitará os seus direitos e os preservará. Certifique-se de estar
+          logado com os dados do titular, em aparelho de sua confiança e que
+          todas as informações fornecidas sejam claras e idôneas.
+        </p>
+        <br />
+
+        <h1>Compartilhamento de Dados</h1>
+        <p>
+          Você também deve estar ciente que podemos compartilhar seus dados com
+          autoridades do Poder público que requisitem tais informações, por
+          exemplo, em caso de solicitação de autoridades administrativas,
+          investigações policiais, determinações do Poder Judiciário.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

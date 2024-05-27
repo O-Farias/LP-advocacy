@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/public/favicon.ico" type="image/x-icon" />
+    <title>Adv. Bianca Pleutim</title>
+    <!-- CSS do Bootstrap -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- CSS Customizado -->
+    <style>
+      body.dark-mode {
+        background-color: #121212;
+        color: #ffffff;
+      }
+      .navbar.dark-mode,
+      .footer.dark-mode {
+        background-color: #1f1f1f;
+      }
+      .section-dark {
+        background-color: #121212;
+        color: #ffffff;
+      }
+      .bg-dark {
+        background-color: #121212 !important;
+      }
+      .text-light {
+        color: #ffffff !important;
+      }
+      .social-icons a {
+        font-size: 1.5em;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+      }
+      .social-icons a.whatsapp {
+        color: #25d366;
+      }
+      .social-icons a.instagram {
+        color: #e1306c;
+      }
+      .social-icons a.linkedin {
+        color: #0077b5;
+      }
+      .social-icons a:hover {
+        color: #ffcc00;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+      .footer a {
+        color: #007bff; /* Cor azul */
+        text-decoration: none;
+      }
+      .footer a:hover {
+        color: #0056b3; /* Cor azul mais escura ao passar o mouse */
+      }
+    </style>
+  </head>
+  <body class="dark-mode">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Adv. Bianca Pleutim</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="jumbotron text-center bg-dark text-light">
+      <div class="container">
+        <h1 class="jumbotron-heading">
+          Bem-vindo ao Nosso Escritório de Advocacia
+        </h1>
+        <p class="lead">
+          Oferecemos soluções jurídicas personalizadas para você e sua empresa.
+        </p>
+        <p>
+          <a href="#contact" class="btn btn-primary my-2">Entre em Contato</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 section-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Direito Trabalhista</h2>
+            <p>Descrição do serviço.</p>
+          </div>
+          <div class="col-md-4">
+            <h2>Direito Contratual</h2>
+            <p>Descrição do serviço.</p>
+          </div>
+          <div class="col-md-4">
+            <h2>Responsabilidade Civil</h2>
+            <p>Descrição do serviço.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 section-dark">
+      <div class="container">
+        <h2>Sobre</h2>
+        <p>Informações sobre o escritório de advocacia.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 section-dark">
+      <div class="container">
+        <h2>Contato</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="Seu nome"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="Seu e-mail"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              rows="3"
+              placeholder="Sua mensagem"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        <div class="social-icons mt-4">
+          <a href="https://wa.me/5541995984340" target="_blank" class="whatsapp"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/pbianca_adv?igsh=M3RtY2U1ZnB6N2Z3&utm_source=qr"
+            target="_blank"
+            class="instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/bia-pleutim-015906257/"
+            target="_blank"
+            class="linkedin"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-light footer">
+      <div class="container">
+        <p class="mb-0">
+          &copy; 2024 Adv. Bianca Pleutim. Todos os direitos
+          <a href="lgpd.html" target="_blank">reservados</a>.
+        </p>
+      </div>
+    </footer>
+
+    <!-- JavaScript do Bootstrap (depende do jQuery e Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- JavaScript para Rolagem Suave -->
+    <script>
+      $(document).ready(function () {
+        $("a.nav-link").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              400,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
