@@ -85,11 +85,15 @@
         background-size: cover;
         background-position: center bottom;
         color: #fff;
-        text-align: center;
+        text-align: right; /* Alinhamento do texto à direita */
         padding: 5rem 2rem; /* padding para ajustar a seção */
         margin-bottom: 0;
         height: 150vh; /* altura fixa para ajustar a seção */
         clip-path: inset(0 0 20% 0); /* corta parte inferior da imagem */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
       }
       .jumbotron::before {
         content: "";
@@ -104,6 +108,22 @@
       .jumbotron .container {
         position: relative;
         z-index: 1;
+        max-width: 50%;
+      }
+      .jumbotron .lead {
+        font-size: 2em; /* Aumentar tamanho da fonte */
+        font-family: "Merriweather", serif;
+        margin-bottom: 1rem;
+      }
+      .btn-transparent {
+        background: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+        transition: background 0.3s, color 0.3s;
+      }
+      .btn-transparent:hover {
+        background: #fff;
+        color: #000;
       }
 
       /* Seção Sobre */
@@ -173,16 +193,17 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="jumbotron text-center">
+    <section class="jumbotron">
       <div class="container">
-        <h1 class="jumbotron-heading">
-          Bem-vindo ao Nosso Escritório de Advocacia
-        </h1>
         <p class="lead">
-          Oferecemos soluções jurídicas personalizadas para você e sua empresa.
+          Oferecemos soluções jurídicas <br />
+          personalizadas para você <br />
+          e sua empresa.
         </p>
         <p>
-          <a href="#contact" class="btn btn-primary my-2">Entre em Contato</a>
+          <a href="#contact" class="btn btn-transparent my-2"
+            >Entre em Contato</a
+          >
         </p>
       </div>
     </section>
