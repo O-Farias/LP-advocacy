@@ -144,22 +144,25 @@
       .jumbotron .container {
         position: relative;
         z-index: 1;
-        max-width: 50%;
+        max-width: 200%; /* diminuir a largura máxima para mover mais para a direita */
+        padding-right: 1rem; /* aumentar o padding direito para mover mais para a direita */
       }
       .jumbotron .lead {
-        font-size: 2em; /* Aumentar tamanho da fonte */
+        font-size: 3.2rem; /* aumentar tamanho da fonte */
         font-family: "Merriweather", serif;
-        margin-bottom: 1rem;
+        margin-bottom: 12rem; /* diminuir a margem inferior */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* sombra do texto */
+        white-space: nowrap; /* evitar quebra de linha */
+        overflow: hidden; /* esconder o texto */
+        animation: fadeIn 3s ease-in-out; /* animação de fade-in */
       }
-      .btn-transparent {
-        background: transparent;
-        border: 2px solid #fff;
-        color: #fff;
-        transition: background 0.3s, color 0.3s;
-      }
-      .btn-transparent:hover {
-        background: #fff;
-        color: #000;
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
       }
 
       /* Seção Sobre */
@@ -260,16 +263,11 @@
 
     <!-- Hero Section -->
     <section class="jumbotron">
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <p class="lead">
           Oferecemos soluções jurídicas <br />
           personalizadas para você <br />
           e sua empresa.
-        </p>
-        <p>
-          <a href="#contact" class="btn btn-transparent my-2"
-            >Entre em Contato</a
-          >
         </p>
       </div>
     </section>
