@@ -115,6 +115,18 @@
         font-size: 3.2rem; /* aumentar tamanho da fonte */
         font-family: "Merriweather", serif;
         margin-bottom: 12rem; /* diminuir a margem inferior */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* sombra do texto */
+        white-space: nowrap; /* evitar quebra de linha */
+        overflow: hidden; /* esconder o texto */
+        animation: fadeIn 3s ease-in-out; /* animação de fade-in */
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
       }
 
       /* Seção Sobre */
@@ -185,7 +197,7 @@
 
     <!-- Hero Section -->
     <section class="jumbotron">
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <p class="lead">
           Oferecemos soluções jurídicas <br />
           personalizadas para você <br />
